@@ -49,3 +49,5 @@ async def analyze(file: UploadFile = File(...)):
         "is_ai_generated": is_fake,
         "confidence": round(score, 4)  #: 0.8732
     }
+
+# uvicorn analyzer:app --reload --port 8000
